@@ -1,0 +1,1730 @@
+* [misc]progress:  [Phase 1 of 3] Setting up.
+* * * [misc]progress:  [1/2] Preparing points
+* * * * [misc]points:  Sampling 256 additional inputs, on iter 0 have 0 / 256
+* * * * [misc]points:  Computing exacts on every 16 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 8 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 4 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 2 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts for 256 points
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Filtering points with unrepresentable outputs
+* * * * [exit]points:  Sampled 256 points with exact outputs
+* * * [misc]progress:  [2/2] Setting up program.
+* [misc]progress:  [Phase 2 of 3] Improving.
+* [enter]simplify:  Simplifying (+ -0.5 (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (10 enodes)
+* * [misc]simplify:  iters left: 4 (12 enodes)
+* [exit]simplify:  Simplified to (+ (* x (* x 1.5)) -0.5)
+* * [misc]progress:  iteration 1 / 4
+* * * [misc]progress:  picking best candidate
+* * * * [misc]pick:  Picked  #<alt-event (λ (x) (+ -0.5 (* 1.5 (* x x))))>
+* * * [misc]progress:  localizing error
+* * * [misc]progress:  generating rewritten candidates
+* * * * [misc]progress:  [ 1 / 1 ] rewriting at (2 2)
+* * * [misc]progress:  generating series expansions
+* * * * [misc]progress:  [ 1 / 1 ] generating series at (2 2)
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* x x)) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 1) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow x 2)) into (* 1.5 (pow x 2))
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow (/ 1 (/ 1 x)) 2)) into (* 1.5 (pow x 2))
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (* 0 -1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (* 0 -1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow (/ 1 (/ 1 (- x))) 2)) into (* 1.5 (pow x 2))
+* * * [misc]progress:  simplifying candidates
+* * * * [misc]progress:  [ 1 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (* 1.5 (* x x)) 1)))>
+* * * * [misc]progress:  [ 2 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (log (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (11 enodes)
+* * [misc]simplify:  iters left: 3 (16 enodes)
+* * [misc]simplify:  iters left: 2 (23 enodes)
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 3 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (log (exp (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (exp (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (10 enodes)
+* * [misc]simplify:  iters left: 3 (12 enodes)
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* * * * [misc]progress:  [ 4 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x)))) (cbrt (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (9 enodes)
+* * [misc]simplify:  iters left: 4 (11 enodes)
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [enter]simplify:  Simplifying (cbrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (cbrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (cbrt (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 5 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (cbrt (* (* (* 1.5 (* x x)) (* 1.5 (* x x))) (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (* (* (* 1.5 (* x x)) (* 1.5 (* x x))) (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (16 enodes)
+* * [misc]simplify:  iters left: 4 (47 enodes)
+* * [misc]simplify:  iters left: 3 (127 enodes)
+* * [misc]simplify:  iters left: 2 (270 enodes)
+* * [misc]simplify:  iters left: 1 (358 enodes)
+* [exit]simplify:  Simplified to (pow (* 1.5 (* x x)) 3)
+* [exit]simplify:  Simplified to (pow (* 1.5 (* x x)) 3)
+* * * * [misc]progress:  [ 6 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (sqrt (* 1.5 (* x x))) (sqrt (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (sqrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [enter]simplify:  Simplifying (sqrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 7 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* 1 (* 1.5 (* x x)))))>
+* * * * [misc]progress:  [ 8 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (* 1.5 x) x)))>
+* [enter]simplify:  Simplifying (* 1.5 x)
+* * [misc]simplify:  iters left: 2 (3 enodes)
+* * [misc]simplify:  iters left: 1 (4 enodes)
+* [exit]simplify:  Simplified to (* 1.5 x)
+* [exit]simplify:  Simplified to (* 1.5 x)
+* * * * [misc]progress:  [ 9 / 12 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (* x x) 1.5)))>
+* * * * [misc]progress:  [ 10 / 12 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (* 1.5 (pow x 2))))>
+* [enter]simplify:  Simplifying (+ -0.5 (* 1.5 (pow x 2)))
+* * [misc]simplify:  iters left: 5 (7 enodes)
+* * [misc]simplify:  iters left: 4 (10 enodes)
+* * [misc]simplify:  iters left: 3 (14 enodes)
+* * [misc]simplify:  iters left: 2 (15 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * * [misc]progress:  [ 11 / 12 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (* 1.5 (pow x 2))))>
+* [enter]simplify:  Simplifying (+ -0.5 (* 1.5 (pow x 2)))
+* * [misc]simplify:  iters left: 5 (7 enodes)
+* * [misc]simplify:  iters left: 4 (10 enodes)
+* * [misc]simplify:  iters left: 3 (14 enodes)
+* * [misc]simplify:  iters left: 2 (15 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * * [misc]progress:  [ 12 / 12 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (* 1.5 (pow x 2))))>
+* [enter]simplify:  Simplifying (+ -0.5 (* 1.5 (pow x 2)))
+* * [misc]simplify:  iters left: 5 (7 enodes)
+* * [misc]simplify:  iters left: 4 (10 enodes)
+* * [misc]simplify:  iters left: 3 (14 enodes)
+* * [misc]simplify:  iters left: 2 (15 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * [misc]progress:  adding candidates to table
+* * [misc]progress:  iteration 2 / 4
+* * * [misc]progress:  picking best candidate
+* * * * [misc]pick:  Picked  #<alt-delta (λ (x) (+ -0.5 (exp (log (* 1.5 (* x x))))))>
+* * * [misc]progress:  localizing error
+* * * [misc]progress:  generating rewritten candidates
+* * * * [misc]progress:  [ 1 / 3 ] rewriting at (2 2 1)
+* * * * [misc]progress:  [ 2 / 3 ] rewriting at (2 2)
+* * * * [misc]progress:  [ 3 / 3 ] rewriting at (2 2 1 1)
+* * * [misc]progress:  generating series expansions
+* * * * [misc]progress:  [ 1 / 3 ] generating series at (2 2 1)
+* [misc]approximate:  Taking taylor expansion of (log (* 1.5 (* x x))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* x x))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* x x))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 2 (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 1) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 2 (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]approximate:  Taking taylor expansion of (log (* 1.5 (* (/ 1 x) (/ 1 x)))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 x) (/ 1 x)))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 x) (/ 1 x)))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (log 1.5) (* 2 (log x))) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (log 1.5) (* 2 (log (/ 1 x)))) into (- (log 1.5) (* 2 (log (/ 1 x))))
+* [misc]approximate:  Taking taylor expansion of (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x))))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x))))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x))))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (log 1.5) (* 2 (log x))) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (* 0 -1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (* 0 -1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (log 1.5) (* 2 (log (/ 1 (- x))))) into (- (log 1.5) (* 2 (log (/ -1 x))))
+* * * * [misc]progress:  [ 2 / 3 ] generating series at (2 2)
+* [misc]approximate:  Taking taylor expansion of (exp (log (* 1.5 (* x x)))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* x x)))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* x x))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (exp (+ (* 2 (log x)) (log 1.5))) into (exp (+ (* 2 (log x)) (log 1.5)))
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* x x)))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* x x))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (exp (+ (* 2 (log x)) (log 1.5))) into (exp (+ (* 2 (log x)) (log 1.5)))
+* [misc]backup-simplify:  Simplify (exp (+ (* 2 (log x)) (log 1.5))) into (exp (+ (* 2 (log x)) (log 1.5)))
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 1) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 4) 24)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 5) 120)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- -2) (log x)) (log 1.5)) into (+ (* 2 (log x)) (log 1.5))
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify (* (exp (+ (* 2 (log x)) (log 1.5))) (+ (* (/ (pow 0 6) 720)) (* (/ (pow 0 4) 24) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 2) 2)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (exp (+ (* 2 (log x)) (log 1.5))) into (exp (+ (* 2 (log x)) (log 1.5)))
+* [misc]approximate:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 x) (/ 1 x))))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 x) (/ 1 x))))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 x) (/ 1 x)))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 x) (/ 1 x))))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 x) (/ 1 x)))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 4) 24)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 5) 120)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 6) 720)) (* (/ (pow 0 4) 24) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 2) 2)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log (/ 1 x))))) into (exp (- (log 1.5) (* 2 (log (/ 1 x)))))
+* [misc]approximate:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x))))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]taylor:  Taking taylor expansion of (exp (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))))) in x
+* [misc]taylor:  Taking taylor expansion of (log (* 1.5 (* (/ 1 (- x)) (/ 1 (- x))))) in x
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify (log 1.5) into (log 1.5)
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log x)))) into (exp (- (log 1.5) (* 2 (log x))))
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (* 0 -1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 1 (/ (* (pow (* 1 0) 1)) (pow 1.5 1)))) 1) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (* 0 -1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -1 (/ (* (pow (* 1 0) 2)) (pow 1.5 2))) (* 1 (/ (* 1 (pow (* 2 0) 1)) (pow 1.5 1)))) 2) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 2 (/ (* (pow (* 1 0) 3)) (pow 1.5 3))) (* -3 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 (pow (* 6 0) 1)) (pow 1.5 1)))) 6) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -6 (/ (* (pow (* 1 0) 4)) (pow 1.5 4))) (* 12 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 1)) (pow 1.5 3))) (* -3 (/ (* 1 (pow (* 2 0) 2)) (pow 1.5 2))) (* -4 (/ (* (pow (* 1 0) 1) 1 (pow (* 6 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 (pow (* 24 0) 1)) (pow 1.5 1)))) 24) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 4) 24)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* 24 (/ (* (pow (* 1 0) 5)) (pow 1.5 5))) (* -60 (/ (* (pow (* 1 0) 3) (pow (* 2 0) 1)) (pow 1.5 4))) (* 30 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 2)) (pow 1.5 3))) (* 20 (/ (* (pow (* 1 0) 2) 1 (pow (* 6 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 2))) (* -5 (/ (* (pow (* 1 0) 1) 1 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 (pow (* 120 0) 1)) (pow 1.5 1)))) 120) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 5) 120)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* (- 2) (log x)) (log 1.5)) into (- (log 1.5) (* 2 (log x)))
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (/ (+ (* -120 (/ (* (pow (* 1 0) 6)) (pow 1.5 6))) (* 360 (/ (* (pow (* 1 0) 4) (pow (* 2 0) 1)) (pow 1.5 5))) (* -270 (/ (* (pow (* 1 0) 2) (pow (* 2 0) 2)) (pow 1.5 4))) (* -120 (/ (* (pow (* 1 0) 3) 1 (pow (* 6 0) 1)) (pow 1.5 4))) (* 30 (/ (* 1 (pow (* 2 0) 3)) (pow 1.5 3))) (* 120 (/ (* (pow (* 1 0) 1) (pow (* 2 0) 1) (pow (* 6 0) 1)) (pow 1.5 3))) (* 30 (/ (* (pow (* 1 0) 2) 1 1 (pow (* 24 0) 1)) (pow 1.5 3))) (* -10 (/ (* 1 1 (pow (* 6 0) 2)) (pow 1.5 2))) (* -15 (/ (* 1 (pow (* 2 0) 1) 1 (pow (* 24 0) 1)) (pow 1.5 2))) (* -6 (/ (* (pow (* 1 0) 1) 1 1 1 (pow (* 120 0) 1)) (pow 1.5 2))) (* 1 (/ (* 1 1 1 1 1 (pow (* 720 0) 1)) (pow 1.5 1)))) 720) into 0
+* [misc]backup-simplify:  Simplify (* (exp (- (log 1.5) (* 2 (log x)))) (+ (* (/ (pow 0 6) 720)) (* (/ (pow 0 4) 24) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2) (/ (pow 0 2) 2)) (* (/ (pow 0 2) 2) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 3) 6)) (* (/ (pow 0 1) 1) (/ (pow 0 1) 1)) (* (/ (pow 0 2) 2)) (* (/ (pow 0 1) 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (exp (- (log 1.5) (* 2 (log (/ 1 (- x)))))) into (exp (- (log 1.5) (* 2 (log (/ -1 x)))))
+* * * * [misc]progress:  [ 3 / 3 ] generating series at (2 2 1 1)
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* x x)) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* x x)) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* x x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (* 0 0) into 0
+* [misc]backup-simplify:  Simplify (* 1.5 0) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 1) (* 1 0)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 0)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 1) (* 0 0))) into 1
+* [misc]backup-simplify:  Simplify (+ (* 1.5 1) (+ (* 0 0) (* 0 0))) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 1) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0)))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (+ (* 0 0) (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 1) (+ (* 0 0) (* 0 0))))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow x 2)) into (* 1.5 (pow x 2))
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 x) (/ 1 x))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 x) (/ 1 x)) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]taylor:  Taking taylor expansion of (/ 1 x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (/ 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1 1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (- (+ (* 1 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)) (* 0 (/ 0 1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow (/ 1 (/ 1 x)) 2)) into (* 1.5 (pow x 2))
+* [misc]approximate:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in (x) around 0
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (* 1.5 (* (/ 1 (- x)) (/ 1 (- x)))) in x
+* [misc]taylor:  Taking taylor expansion of 1.5 in x
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]taylor:  Taking taylor expansion of (* (/ 1 (- x)) (/ 1 (- x))) in x
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]taylor:  Taking taylor expansion of (/ 1 (- x)) in x
+* [misc]taylor:  Taking taylor expansion of (- x) in x
+* [misc]taylor:  Taking taylor expansion of x in x
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify 1 into 1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (/ 1 -1) into -1
+* [misc]backup-simplify:  Simplify (* -1 -1) into 1
+* [misc]backup-simplify:  Simplify (* 1.5 1) into 1.5
+* [misc]backup-simplify:  Simplify 1.5 into 1.5
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (* 0 -1)) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (* 0 1)) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (* 0 -1))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (* 0 1))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1)))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1)))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- 0) into 0
+* [misc]backup-simplify:  Simplify (- 1) into -1
+* [misc]backup-simplify:  Simplify (- (+ (* -1 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)) (* 0 (/ 0 -1)))) into 0
+* [misc]backup-simplify:  Simplify (+ (* -1 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 -1))))))) into 0
+* [misc]backup-simplify:  Simplify (+ (* 1.5 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (+ (* 0 0) (* 0 1))))))) into 0
+* [misc]backup-simplify:  Simplify 0 into 0
+* [misc]backup-simplify:  Simplify (* 1.5 (pow (/ 1 (/ 1 (- x))) 2)) into (* 1.5 (pow x 2))
+* * * [misc]progress:  simplifying candidates
+* * * * [misc]progress:  [ 1 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (+ (log 1.5) (log (* x x))))))>
+* [enter]simplify:  Simplifying (log 1.5)
+* * [misc]simplify:  iters left: 1 (2 enodes)
+* [exit]simplify:  Simplified to (log 1.5)
+* [exit]simplify:  Simplified to (log 1.5)
+* [enter]simplify:  Simplifying (log (* x x))
+* * [misc]simplify:  iters left: 3 (3 enodes)
+* * [misc]simplify:  iters left: 2 (5 enodes)
+* [exit]simplify:  Simplified to (+ (log x) (log x))
+* [exit]simplify:  Simplified to (+ (log x) (log x))
+* * * * [misc]progress:  [ 2 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (* 1 (log (* 1.5 (* x x)))))))>
+* [enter]simplify:  Simplifying (log (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (11 enodes)
+* * [misc]simplify:  iters left: 3 (16 enodes)
+* * [misc]simplify:  iters left: 2 (23 enodes)
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 3 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (pow (log (* 1.5 (* x x))) 1))))>
+* * * * [misc]progress:  [ 4 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* 1.5 (* x x))))))>
+* * * * [misc]progress:  [ 5 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (exp (log (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (log (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (12 enodes)
+* * [misc]simplify:  iters left: 4 (17 enodes)
+* * [misc]simplify:  iters left: 3 (25 enodes)
+* [exit]simplify:  Simplified to (log (log (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (log (log (* 1.5 (* x x))))
+* * * * [misc]progress:  [ 6 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (exp (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (12 enodes)
+* * [misc]simplify:  iters left: 4 (20 enodes)
+* * [misc]simplify:  iters left: 3 (29 enodes)
+* * [misc]simplify:  iters left: 2 (38 enodes)
+* * [misc]simplify:  iters left: 1 (52 enodes)
+* [exit]simplify:  Simplified to (* (* x x) 1.5)
+* [exit]simplify:  Simplified to (* (* x x) 1.5)
+* * * * [misc]progress:  [ 7 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (* (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x))))) (cbrt (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (18 enodes)
+* * [misc]simplify:  iters left: 3 (26 enodes)
+* [exit]simplify:  Simplified to (* (cbrt (log (* (* 1.5 x) x))) (cbrt (log (* (* 1.5 x) x))))
+* [exit]simplify:  Simplified to (* (cbrt (log (* (* 1.5 x) x))) (cbrt (log (* (* 1.5 x) x))))
+* [enter]simplify:  Simplifying (cbrt (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (12 enodes)
+* * [misc]simplify:  iters left: 4 (17 enodes)
+* * [misc]simplify:  iters left: 3 (25 enodes)
+* [exit]simplify:  Simplified to (cbrt (log (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (cbrt (log (* 1.5 (* x x))))
+* * * * [misc]progress:  [ 8 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (cbrt (* (* (log (* 1.5 (* x x))) (log (* 1.5 (* x x)))) (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (* (log (* 1.5 (* x x))) (log (* 1.5 (* x x)))) (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (14 enodes)
+* * [misc]simplify:  iters left: 4 (33 enodes)
+* * [misc]simplify:  iters left: 3 (97 enodes)
+* * [misc]simplify:  iters left: 2 (345 enodes)
+* [exit]simplify:  Simplified to (pow (log (* (* 1.5 x) x)) 3)
+* [exit]simplify:  Simplified to (pow (log (* (* 1.5 x) x)) 3)
+* * * * [misc]progress:  [ 9 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (* (sqrt (log (* 1.5 (* x x)))) (sqrt (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (sqrt (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (12 enodes)
+* * [misc]simplify:  iters left: 4 (17 enodes)
+* * [misc]simplify:  iters left: 3 (25 enodes)
+* [exit]simplify:  Simplified to (sqrt (log (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (sqrt (log (* 1.5 (* x x))))
+* [enter]simplify:  Simplifying (sqrt (log (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (12 enodes)
+* * [misc]simplify:  iters left: 4 (17 enodes)
+* * [misc]simplify:  iters left: 3 (25 enodes)
+* [exit]simplify:  Simplified to (sqrt (log (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (sqrt (log (* 1.5 (* x x))))
+* * * * [misc]progress:  [ 10 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (* 1 (log (* 1.5 (* x x)))))))>
+* * * * [misc]progress:  [ 11 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (exp (log (* 1.5 (* x x)))) 1)))>
+* * * * [misc]progress:  [ 12 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (exp 1) (log (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (exp 1)
+* * [misc]simplify:  iters left: 1 (2 enodes)
+* [exit]simplify:  Simplified to E
+* [exit]simplify:  Simplified to E
+* * * * [misc]progress:  [ 13 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (exp (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x)))))) (cbrt (log (* 1.5 (* x x)))))))>
+* [enter]simplify:  Simplifying (exp (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x))))))
+* * [misc]simplify:  iters left: 6 (8 enodes)
+* * [misc]simplify:  iters left: 5 (16 enodes)
+* * [misc]simplify:  iters left: 4 (21 enodes)
+* * [misc]simplify:  iters left: 3 (29 enodes)
+* [exit]simplify:  Simplified to (exp (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x))))))
+* [exit]simplify:  Simplified to (exp (* (cbrt (log (* 1.5 (* x x)))) (cbrt (log (* 1.5 (* x x))))))
+* * * * [misc]progress:  [ 14 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (exp (sqrt (log (* 1.5 (* x x))))) (sqrt (log (* 1.5 (* x x)))))))>
+* [enter]simplify:  Simplifying (exp (sqrt (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (18 enodes)
+* * [misc]simplify:  iters left: 3 (26 enodes)
+* [exit]simplify:  Simplified to (exp (sqrt (log (* (* 1.5 x) x))))
+* [exit]simplify:  Simplified to (exp (sqrt (log (* (* 1.5 x) x))))
+* * * * [misc]progress:  [ 15 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (pow (exp 1) (log (* 1.5 (* x x))))))>
+* [enter]simplify:  Simplifying (exp 1)
+* * [misc]simplify:  iters left: 1 (2 enodes)
+* [exit]simplify:  Simplified to E
+* [exit]simplify:  Simplified to E
+* * * * [misc]progress:  [ 16 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (exp (log 1.5)) (exp (log (* x x))))))>
+* [enter]simplify:  Simplifying (exp (log 1.5))
+* * [misc]simplify:  iters left: 2 (3 enodes)
+* [exit]simplify:  Simplified to 1.5
+* [exit]simplify:  Simplified to 1.5
+* [enter]simplify:  Simplifying (exp (log (* x x)))
+* * [misc]simplify:  iters left: 4 (4 enodes)
+* * [misc]simplify:  iters left: 3 (6 enodes)
+* * [misc]simplify:  iters left: 2 (8 enodes)
+* * [misc]simplify:  iters left: 1 (9 enodes)
+* [exit]simplify:  Simplified to (* x x)
+* [exit]simplify:  Simplified to (* x x)
+* * * * [misc]progress:  [ 17 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* 1.5 (* x x))))>
+* * * * [misc]progress:  [ 18 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (log (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (23 enodes)
+* * [misc]simplify:  iters left: 3 (31 enodes)
+* * [misc]simplify:  iters left: 2 (41 enodes)
+* * [misc]simplify:  iters left: 1 (57 enodes)
+* [exit]simplify:  Simplified to (log (* x (* x 1.5)))
+* [exit]simplify:  Simplified to (log (* x (* x 1.5)))
+* * * * [misc]progress:  [ 19 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (log (exp (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (exp (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (27 enodes)
+* * [misc]simplify:  iters left: 3 (41 enodes)
+* * [misc]simplify:  iters left: 2 (50 enodes)
+* * [misc]simplify:  iters left: 1 (64 enodes)
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* * * * [misc]progress:  [ 20 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (* (cbrt (exp (log (* 1.5 (* x x))))) (cbrt (exp (log (* 1.5 (* x x)))))) (cbrt (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (cbrt (exp (log (* 1.5 (* x x))))) (cbrt (exp (log (* 1.5 (* x x))))))
+* * [misc]simplify:  iters left: 6 (8 enodes)
+* * [misc]simplify:  iters left: 5 (14 enodes)
+* * [misc]simplify:  iters left: 4 (22 enodes)
+* * [misc]simplify:  iters left: 3 (31 enodes)
+* * [misc]simplify:  iters left: 2 (40 enodes)
+* * [misc]simplify:  iters left: 1 (54 enodes)
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [enter]simplify:  Simplifying (cbrt (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (21 enodes)
+* * [misc]simplify:  iters left: 3 (31 enodes)
+* * [misc]simplify:  iters left: 2 (40 enodes)
+* * [misc]simplify:  iters left: 1 (54 enodes)
+* [exit]simplify:  Simplified to (cbrt (* (* 1.5 x) x))
+* [exit]simplify:  Simplified to (cbrt (* (* 1.5 x) x))
+* * * * [misc]progress:  [ 21 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (cbrt (* (* (exp (log (* 1.5 (* x x)))) (exp (log (* 1.5 (* x x))))) (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (* (exp (log (* 1.5 (* x x)))) (exp (log (* 1.5 (* x x))))) (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (8 enodes)
+* * [misc]simplify:  iters left: 5 (17 enodes)
+* * [misc]simplify:  iters left: 4 (53 enodes)
+* * [misc]simplify:  iters left: 3 (148 enodes)
+* [exit]simplify:  Simplified to (pow (* (* 1.5 x) x) 3)
+* [exit]simplify:  Simplified to (pow (* (* 1.5 x) x) 3)
+* * * * [misc]progress:  [ 22 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* (sqrt (exp (log (* 1.5 (* x x))))) (sqrt (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (sqrt (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (21 enodes)
+* * [misc]simplify:  iters left: 3 (31 enodes)
+* * [misc]simplify:  iters left: 2 (40 enodes)
+* * [misc]simplify:  iters left: 1 (54 enodes)
+* [exit]simplify:  Simplified to (sqrt (* (* 1.5 x) x))
+* [exit]simplify:  Simplified to (sqrt (* (* 1.5 x) x))
+* [enter]simplify:  Simplifying (sqrt (exp (log (* 1.5 (* x x)))))
+* * [misc]simplify:  iters left: 6 (7 enodes)
+* * [misc]simplify:  iters left: 5 (13 enodes)
+* * [misc]simplify:  iters left: 4 (21 enodes)
+* * [misc]simplify:  iters left: 3 (31 enodes)
+* * [misc]simplify:  iters left: 2 (40 enodes)
+* * [misc]simplify:  iters left: 1 (54 enodes)
+* [exit]simplify:  Simplified to (sqrt (* (* 1.5 x) x))
+* [exit]simplify:  Simplified to (sqrt (* (* 1.5 x) x))
+* * * * [misc]progress:  [ 23 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (* 1 (exp (log (* 1.5 (* x x)))))))>
+* * * * [misc]progress:  [ 24 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (pow (* 1.5 (* x x)) 1)))))>
+* * * * [misc]progress:  [ 25 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (exp (log (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (log (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (11 enodes)
+* * [misc]simplify:  iters left: 3 (16 enodes)
+* * [misc]simplify:  iters left: 2 (23 enodes)
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (log (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 26 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (log (exp (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (exp (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (10 enodes)
+* * [misc]simplify:  iters left: 3 (12 enodes)
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* [exit]simplify:  Simplified to (pow (exp 1.5) (* x x))
+* * * * [misc]progress:  [ 27 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x)))) (cbrt (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (9 enodes)
+* * [misc]simplify:  iters left: 4 (11 enodes)
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [exit]simplify:  Simplified to (* (cbrt (* 1.5 (* x x))) (cbrt (* 1.5 (* x x))))
+* [enter]simplify:  Simplifying (cbrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (cbrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (cbrt (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 28 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (cbrt (* (* (* 1.5 (* x x)) (* 1.5 (* x x))) (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (* (* (* 1.5 (* x x)) (* 1.5 (* x x))) (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (16 enodes)
+* * [misc]simplify:  iters left: 4 (47 enodes)
+* * [misc]simplify:  iters left: 3 (127 enodes)
+* * [misc]simplify:  iters left: 2 (270 enodes)
+* * [misc]simplify:  iters left: 1 (358 enodes)
+* [exit]simplify:  Simplified to (pow (* 1.5 (* x x)) 3)
+* [exit]simplify:  Simplified to (pow (* 1.5 (* x x)) 3)
+* * * * [misc]progress:  [ 29 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* (sqrt (* 1.5 (* x x))) (sqrt (* 1.5 (* x x))))))))>
+* [enter]simplify:  Simplifying (sqrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [enter]simplify:  Simplifying (sqrt (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 5 (5 enodes)
+* * [misc]simplify:  iters left: 4 (8 enodes)
+* * [misc]simplify:  iters left: 3 (10 enodes)
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* [exit]simplify:  Simplified to (sqrt (* 1.5 (* x x)))
+* * * * [misc]progress:  [ 30 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* 1 (* 1.5 (* x x)))))))>
+* * * * [misc]progress:  [ 31 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* (* 1.5 x) x)))))>
+* [enter]simplify:  Simplifying (* 1.5 x)
+* * [misc]simplify:  iters left: 2 (3 enodes)
+* * [misc]simplify:  iters left: 1 (4 enodes)
+* [exit]simplify:  Simplified to (* 1.5 x)
+* [exit]simplify:  Simplified to (* 1.5 x)
+* * * * [misc]progress:  [ 32 / 41 ] simplifiying candidate #<alt-delta (λ (x) (+ -0.5 (exp (log (* (* x x) 1.5)))))>
+* * * * [misc]progress:  [ 33 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (+ (* 2 (log x)) (log 1.5)))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (+ (* 2 (log x)) (log 1.5))))
+* * [misc]simplify:  iters left: 6 (10 enodes)
+* * [misc]simplify:  iters left: 5 (16 enodes)
+* * [misc]simplify:  iters left: 4 (23 enodes)
+* * [misc]simplify:  iters left: 3 (29 enodes)
+* * [misc]simplify:  iters left: 2 (31 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* (* x x) 1.5))
+* * * * [misc]progress:  [ 34 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ 1 x)))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ 1 x))))))
+* * [misc]simplify:  iters left: 6 (12 enodes)
+* * [misc]simplify:  iters left: 5 (25 enodes)
+* * [misc]simplify:  iters left: 4 (45 enodes)
+* * [misc]simplify:  iters left: 3 (87 enodes)
+* * [misc]simplify:  iters left: 2 (227 enodes)
+* [exit]simplify:  Simplified to (+ (* (* x x) 1.5) -0.5)
+* * * * [misc]progress:  [ 35 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ -1 x)))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ -1 x))))))
+* * [misc]simplify:  iters left: 6 (12 enodes)
+* * [misc]simplify:  iters left: 5 (22 enodes)
+* * [misc]simplify:  iters left: 4 (39 enodes)
+* * [misc]simplify:  iters left: 3 (73 enodes)
+* * [misc]simplify:  iters left: 2 (169 enodes)
+* * [misc]simplify:  iters left: 1 (442 enodes)
+* [exit]simplify:  Simplified to (+ (* 1.5 (* x x)) -0.5)
+* * * * [misc]progress:  [ 36 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (+ (* 2 (log x)) (log 1.5)))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (+ (* 2 (log x)) (log 1.5))))
+* * [misc]simplify:  iters left: 6 (10 enodes)
+* * [misc]simplify:  iters left: 5 (16 enodes)
+* * [misc]simplify:  iters left: 4 (23 enodes)
+* * [misc]simplify:  iters left: 3 (29 enodes)
+* * [misc]simplify:  iters left: 2 (31 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* (* x x) 1.5))
+* * * * [misc]progress:  [ 37 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ 1 x)))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ 1 x))))))
+* * [misc]simplify:  iters left: 6 (12 enodes)
+* * [misc]simplify:  iters left: 5 (25 enodes)
+* * [misc]simplify:  iters left: 4 (45 enodes)
+* * [misc]simplify:  iters left: 3 (87 enodes)
+* * [misc]simplify:  iters left: 2 (227 enodes)
+* [exit]simplify:  Simplified to (+ (* (* x x) 1.5) -0.5)
+* * * * [misc]progress:  [ 38 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ -1 x)))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (- (log 1.5) (* 2 (log (/ -1 x))))))
+* * [misc]simplify:  iters left: 6 (12 enodes)
+* * [misc]simplify:  iters left: 5 (22 enodes)
+* * [misc]simplify:  iters left: 4 (39 enodes)
+* * [misc]simplify:  iters left: 3 (73 enodes)
+* * [misc]simplify:  iters left: 2 (169 enodes)
+* * [misc]simplify:  iters left: 1 (442 enodes)
+* [exit]simplify:  Simplified to (+ (* 1.5 (* x x)) -0.5)
+* * * * [misc]progress:  [ 39 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (log (* 1.5 (pow x 2))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (log (* 1.5 (pow x 2)))))
+* * [misc]simplify:  iters left: 6 (9 enodes)
+* * [misc]simplify:  iters left: 5 (15 enodes)
+* * [misc]simplify:  iters left: 4 (26 enodes)
+* * [misc]simplify:  iters left: 3 (40 enodes)
+* * [misc]simplify:  iters left: 2 (59 enodes)
+* * [misc]simplify:  iters left: 1 (94 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * * [misc]progress:  [ 40 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (log (* 1.5 (pow x 2))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (log (* 1.5 (pow x 2)))))
+* * [misc]simplify:  iters left: 6 (9 enodes)
+* * [misc]simplify:  iters left: 5 (15 enodes)
+* * [misc]simplify:  iters left: 4 (26 enodes)
+* * [misc]simplify:  iters left: 3 (40 enodes)
+* * [misc]simplify:  iters left: 2 (59 enodes)
+* * [misc]simplify:  iters left: 1 (94 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * * [misc]progress:  [ 41 / 41 ] simplifiying candidate #<alt-event (λ (x) (+ -0.5 (exp (log (* 1.5 (pow x 2))))))>
+* [enter]simplify:  Simplifying (+ -0.5 (exp (log (* 1.5 (pow x 2)))))
+* * [misc]simplify:  iters left: 6 (9 enodes)
+* * [misc]simplify:  iters left: 5 (15 enodes)
+* * [misc]simplify:  iters left: 4 (26 enodes)
+* * [misc]simplify:  iters left: 3 (40 enodes)
+* * [misc]simplify:  iters left: 2 (59 enodes)
+* * [misc]simplify:  iters left: 1 (94 enodes)
+* [exit]simplify:  Simplified to (+ -0.5 (* x (* x 1.5)))
+* * * [misc]progress:  adding candidates to table
+* [misc]progress:  [Phase 3 of 3] Extracting.
+* * [misc]regime-changes:  Finding splitpoints for: (#<alt-delta (λ (x) (+ -0.5 (exp (log (* 1.5 (* x x))))))> #<alt-event (λ (x) (+ -0.5 (* 1.5 (* x x))))>)
+* [misc]regimes:  Found splitpoints: (#s(sp 0 (+ -0.5 (* 1.5 (* x x))) +nan.0)) , with alts (#<alt-event (λ (x) (+ -0.5 (* 1.5 (* x x))))>)
+* [enter]simplify:  Simplifying (+ -0.5 (* 1.5 (* x x)))
+* * [misc]simplify:  iters left: 6 (6 enodes)
+* * [misc]simplify:  iters left: 5 (8 enodes)
+* [exit]simplify:  Simplified to (+ (* (* x x) 1.5) -0.5)
+* * * * [misc]points:  Sampling 8000 additional inputs, on iter 0 have 0 / 8000
+* * * * [misc]points:  Computing exacts on every 500 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 250 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 125 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 62 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 31 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 15 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 7 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 3 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts for 8000 points
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Filtering points with unrepresentable outputs
+* * * * [exit]points:  Sampled 8000 points with exact outputs
