@@ -1,0 +1,25 @@
+; seed : 1854149285
+
+; flags :
+;   rules      = (arithmetic polynomials fractions exponents trigonometry hyperbolic complex special bools branches)
+;   setup      = (simplify)
+;   fn         = (cbrt)
+;   generate   = (rr taylor simplify)
+;   reduce     = (regimes taylor simplify avg-error binary-search branch-expressions)
+;   precision  = (double fallback)
+
+; timed out
+(FPCore (x)
+  :name "19"
+  (+ (+ (+ (+ (+ (+ (+ (+ (+ (* -670442572800.0 x) (* 4022655436800.0 (* (* x x) x))) (* -6436248698880.0 (* (* (* (* x x) x) x) x))) (* 4290832465920.0 (* (* (* (* (* (* x x) x) x) x) x) x))) (* -1430277488640.0 (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x))) (* 260050452480.0 (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x))) (* -26671841280.0 (* (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x) x))) (* 1524105216.0 (* (* (* (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x) x) x) x))) (* -44826624.0 (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x) x) x) x) x) x))) (* 524288.0 (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x) x) x) x) x) x) x) x))))
+
+; timed out
+(FPCore (x)
+  :name "13"
+  (+ (+ (+ (+ (+ (+ (* 17297280.0 x) (* -69189120.0 (* (* x x) x))) (* 69189120.0 (* (* (* (* x x) x) x) x))) (* -26357760.0 (* (* (* (* (* (* x x) x) x) x) x) x))) (* 4392960.0 (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x))) (* -319488.0 (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x))) (* 8192.0 (* (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x) x))))
+
+; timed out
+(FPCore (x)
+  :name "12"
+  (+ (+ (+ (+ (+ (+ 665280.0 (* -7983360.0 (* x x))) (* 13305600.0 (* (* (* x x) x) x))) (* -7096320.0 (* (* (* (* (* x x) x) x) x) x))) (* 1520640.0 (* (* (* (* (* (* (* x x) x) x) x) x) x) x))) (* -135168.0 (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x))) (* 4096.0 (* (* (* (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) x) x) x) x))))
+
