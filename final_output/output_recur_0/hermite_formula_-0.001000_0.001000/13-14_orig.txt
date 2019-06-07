@@ -1,0 +1,80 @@
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 13-14_32 -> output_lp
+HP EXE: 13-14_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -0.001
+UNIFORM_INPUTUB: 0.001
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Update Global: 2.60852e-08
+Update Global: 3.88345e-08
+Update Global: 5.53287e-08
+Update Global: 6.78045e-09
+Update Global: -1.33191e-08
+Update Global: -1.57211e-08
+Update Global: -4.68616e-08
+Update Global: -5.35898e-08
+Update Global: -5.46828e-08
+Update Global: 5.68399e-08
+Update Global: -5.68535e-08
+Update Global: -5.70208e-08
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 12
+Best Error: [-5.70208e-08, 5.68399e-08]
+AVERAGE ERROR: 2.70005e-08
+ERROR VARIANCE: 3.09366e-16
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 13-14_32 -> output_lp
+HP EXE: 13-14_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -0.001
+UNIFORM_INPUTUB: 0.001
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Update Global: 2.60852e-08
+Update Global: 3.88345e-08
+Update Global: 5.53287e-08
+Update Global: 6.78045e-09
+Update Global: -1.33191e-08
+Update Global: -1.57211e-08
+Update Global: -4.68616e-08
+Update Global: -5.35898e-08
+Update Global: -5.46828e-08
+Update Global: 5.68399e-08
+Update Global: -5.68535e-08
+Update Global: -5.70208e-08
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 12
+Best Error: [-5.70208e-08, 5.68399e-08]
+AVERAGE ERROR: 2.70005e-08
+ERROR VARIANCE: 3.09366e-16

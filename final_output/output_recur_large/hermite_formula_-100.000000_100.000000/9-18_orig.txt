@@ -1,0 +1,62 @@
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 9-18_32 -> output_lp
+HP EXE: 9-18_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -100
+UNIFORM_INPUTUB: 100
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Update Global: -3.40727e-07
+Update Global: -2.24014e-07
+Update Global: 4.72638e-08
+Update Global: 1.29998e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: 3.20878e-07
+Update Global: -6.845e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: 3.49302e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: 4.00737e-07
+Warning: +/-inf as error -> convert to zero
+Update Global: -6.75096e-05
+Warning: +/-inf as error -> convert to zero
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 9
+Best Error: [-6.75096e-05, 4.00737e-07]
+AVERAGE ERROR: 1.21629e-06
+ERROR VARIANCE: 7.20669e-11

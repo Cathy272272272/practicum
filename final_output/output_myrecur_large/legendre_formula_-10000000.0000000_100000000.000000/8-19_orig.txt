@@ -1,0 +1,91 @@
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 8-19_32 -> output_lp
+HP EXE: 8-19_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -1e+07
+UNIFORM_INPUTUB: 1e+08
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Warning: NaN as error -> convert to zero
+Update Global: 0
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+Warning: NaN as error -> convert to zero
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 1
+Best Error: [0, 0]
+AVERAGE ERROR: 0
+ERROR VARIANCE: 0

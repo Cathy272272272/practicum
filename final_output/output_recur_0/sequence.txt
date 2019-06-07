@@ -1,0 +1,9 @@
+hermite_formula_-0.001000_0.001000/
+hermite_formula_-0.010000_0.010000/
+hermite_formula_-0.100000_0.100000/
+laguerre_formula_-0.001000_0.001000/
+laguerre_formula_-0.010000_0.010000/
+laguerre_formula_-0.100000_0.100000/
+legendre_formula_-0.001000_0.001000/
+legendre_formula_-0.010000_0.010000/
+legendre_formula_-0.100000_0.100000/

@@ -1,0 +1,51 @@
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 15-12_32 -> output_lp
+HP EXE: 15-12_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -1000
+UNIFORM_INPUTUB: 1000
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Update Global: -7.87795e-08
+Update Global: 1.80835e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: 2.14602e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: -1.13366e-07
+Warning: +/-inf as error -> convert to zero
+Update Global: -1.30477e-07
+Update Global: -2.58917e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Update Global: 3.37065e-07
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+Warning: +/-inf as error -> convert to zero
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 7
+Best Error: [-2.58917e-07, 3.37065e-07]
+AVERAGE ERROR: 6.72447e-08
+ERROR VARIANCE: 4.78026e-15

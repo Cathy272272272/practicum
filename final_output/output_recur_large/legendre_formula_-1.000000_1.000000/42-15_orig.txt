@@ -1,0 +1,40 @@
+==== S3FP arguments and settings ====
+input bit-width: 4 bytes
+n inputs: 1
+input_name: random_input
+LP EXE: 42-15_32 -> output_lp
+HP EXE: 42-15_128 -> output_hp
+RT_MODE: 2
+TIMEOUT: 60
+T_RESOURCE: 2
+RSEED: 22
+ERR_OPT: 2
+ERR_FUNC: 1
+OPT_REPRESENT: MIX
+OPT_RANGE: WIDE
+UNIFORM_INPUT: 1
+REL_DELTA: 1e-40
+UNIFORM_INPUTLB: -1
+UNIFORM_INPUTUB: 1
+WIDDEN FRAC.: 1e-05
+CHECK UNSTABLE ERROR: 0
+=====================================
+Update Global: 4.44411e-08
+Update Global: 9.29642e-05
+Update Global: -1.18576e-07
+Update Global: -6.67835e-05
+Update Global: 0.000111469
+Update Global: 0.000198692
+Update Global: -8.4109e-05
+Update Global: -0.000292903
+Update Global: -0.000297299
+Update Global: -0.000313366
+Update Global: 0.000948979
+Update Global: -0.000346058
+N VALID BGRT TESTS: 62
+N BGRT TESTS: 62
+N LOCAL UPDATES: 0
+N GLOBAL UPDATES: 12
+Best Error: [-0.000346058, 0.000948979]
+AVERAGE ERROR: 9.25296e-05
+ERROR VARIANCE: 3.11648e-08
