@@ -1,0 +1,69 @@
+* [misc]progress:  [Phase 1 of 3] Setting up.
+* * * [misc]progress:  [1/2] Preparing points
+* * * * [misc]points:  Sampling 256 additional inputs, on iter 0 have 0 / 256
+* * * * [misc]points:  Computing exacts on every 16 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 8 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 4 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 2 of 256 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts for 256 points
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Filtering points with unrepresentable outputs
+* * * * [exit]points:  Sampled 256 points with exact outputs
+* * * [misc]progress:  [2/2] Setting up program.
+* [misc]progress:  [Phase 2 of 3] Improving.
+* [enter]simplify:  Simplifying (* 1.0 x)
+* * [misc]simplify:  iters left: 2 (3 enodes)
+* * [misc]simplify:  iters left: 1 (4 enodes)
+* [exit]simplify:  Simplified to (* 1.0 x)
+* * [misc]progress:  iteration 1 / 4
+* * * [misc]progress:  picking best candidate
+* * * * [misc]pick:  Picked  #<alt-event (λ (x) (* 1.0 x))>
+* * * [misc]progress:  localizing error
+* * * [misc]progress:  generating rewritten candidates
+* * * [misc]progress:  generating series expansions
+* * * [misc]progress:  simplifying candidates
+* * * [misc]progress:  adding candidates to table
+* [misc]progress:  [Phase 3 of 3] Extracting.
+* [enter]simplify:  Simplifying (* 1.0 x)
+* * [misc]simplify:  iters left: 2 (3 enodes)
+* * [misc]simplify:  iters left: 1 (4 enodes)
+* [exit]simplify:  Simplified to (* 1.0 x)
+* * * * [misc]points:  Sampling 8000 additional inputs, on iter 0 have 0 / 8000
+* * * * [misc]points:  Computing exacts on every 500 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 250 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 125 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 62 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 31 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 15 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 7 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts on every 3 of 8000 points to ramp up precision
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Computing exacts for 8000 points
+* * * * [misc]points:  Setting MPFR precision to 64
+* * * * [misc]points:  Setting MPFR precision to 320
+* * * * [misc]points:  Filtering points with unrepresentable outputs
+* * * * [exit]points:  Sampled 8000 points with exact outputs
