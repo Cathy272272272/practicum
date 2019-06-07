@@ -1,0 +1,467 @@
+#include <tgmath.h>
+#include <gmp.h>
+#include <mpfr.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+char *name = "9";
+
+double f_if(float x) {
+        float r20711805 = 1.0;
+        float r20711806 = -9.0;
+        float r20711807 = x;
+        float r20711808 = r20711806 * r20711807;
+        float r20711809 = r20711805 + r20711808;
+        float r20711810 = 18.0;
+        float r20711811 = r20711807 * r20711807;
+        float r20711812 = r20711810 * r20711811;
+        float r20711813 = r20711809 + r20711812;
+        float r20711814 = -14.0;
+        float r20711815 = r20711811 * r20711807;
+        float r20711816 = r20711814 * r20711815;
+        float r20711817 = r20711813 + r20711816;
+        float r20711818 = 5.25;
+        float r20711819 = r20711815 * r20711807;
+        float r20711820 = r20711818 * r20711819;
+        float r20711821 = r20711817 + r20711820;
+        float r20711822 = -1.05;
+        float r20711823 = r20711819 * r20711807;
+        float r20711824 = r20711822 * r20711823;
+        float r20711825 = r20711821 + r20711824;
+        float r20711826 = 0.116667;
+        float r20711827 = r20711823 * r20711807;
+        float r20711828 = r20711826 * r20711827;
+        float r20711829 = r20711825 + r20711828;
+        float r20711830 = -0.007143;
+        float r20711831 = r20711827 * r20711807;
+        float r20711832 = r20711830 * r20711831;
+        float r20711833 = r20711829 + r20711832;
+        float r20711834 = 0.000223;
+        float r20711835 = r20711831 * r20711807;
+        float r20711836 = r20711834 * r20711835;
+        float r20711837 = r20711833 + r20711836;
+        float r20711838 = -3e-06;
+        float r20711839 = r20711835 * r20711807;
+        float r20711840 = r20711838 * r20711839;
+        float r20711841 = r20711837 + r20711840;
+        return r20711841;
+}
+
+double f_id(double x) {
+        double r20711842 = 1.0;
+        double r20711843 = -9.0;
+        double r20711844 = x;
+        double r20711845 = r20711843 * r20711844;
+        double r20711846 = r20711842 + r20711845;
+        double r20711847 = 18.0;
+        double r20711848 = r20711844 * r20711844;
+        double r20711849 = r20711847 * r20711848;
+        double r20711850 = r20711846 + r20711849;
+        double r20711851 = -14.0;
+        double r20711852 = r20711848 * r20711844;
+        double r20711853 = r20711851 * r20711852;
+        double r20711854 = r20711850 + r20711853;
+        double r20711855 = 5.25;
+        double r20711856 = r20711852 * r20711844;
+        double r20711857 = r20711855 * r20711856;
+        double r20711858 = r20711854 + r20711857;
+        double r20711859 = -1.05;
+        double r20711860 = r20711856 * r20711844;
+        double r20711861 = r20711859 * r20711860;
+        double r20711862 = r20711858 + r20711861;
+        double r20711863 = 0.116667;
+        double r20711864 = r20711860 * r20711844;
+        double r20711865 = r20711863 * r20711864;
+        double r20711866 = r20711862 + r20711865;
+        double r20711867 = -0.007143;
+        double r20711868 = r20711864 * r20711844;
+        double r20711869 = r20711867 * r20711868;
+        double r20711870 = r20711866 + r20711869;
+        double r20711871 = 0.000223;
+        double r20711872 = r20711868 * r20711844;
+        double r20711873 = r20711871 * r20711872;
+        double r20711874 = r20711870 + r20711873;
+        double r20711875 = -3e-06;
+        double r20711876 = r20711872 * r20711844;
+        double r20711877 = r20711875 * r20711876;
+        double r20711878 = r20711874 + r20711877;
+        return r20711878;
+}
+
+
+double f_of(float x) {
+        float r20711879 = x;
+        float r20711880 = -3e-06;
+        float r20711881 = r20711879 * r20711880;
+        float r20711882 = 0.000223;
+        float r20711883 = r20711881 + r20711882;
+        float r20711884 = r20711879 * r20711879;
+        float r20711885 = 3;
+        float r20711886 = 1;
+        float r20711887 = r20711885 + r20711886;
+        float r20711888 = pow(r20711884, r20711887);
+        float r20711889 = r20711883 * r20711888;
+        float r20711890 = r20711884 * r20711884;
+        float r20711891 = cbrt(r20711890);
+        float r20711892 = sqrt(r20711891);
+        float r20711893 = r20711891 * r20711892;
+        float r20711894 = r20711893 * r20711892;
+        float r20711895 = r20711894 * r20711891;
+        float r20711896 = 0.116667;
+        float r20711897 = r20711896 * r20711884;
+        float r20711898 = 5.25;
+        float r20711899 = -1.05;
+        float r20711900 = r20711879 * r20711899;
+        float r20711901 = r20711898 + r20711900;
+        float r20711902 = r20711897 + r20711901;
+        float r20711903 = r20711895 * r20711902;
+        float r20711904 = r20711889 + r20711903;
+        float r20711905 = 1.0;
+        float r20711906 = -9.0;
+        float r20711907 = r20711906 * r20711879;
+        float r20711908 = r20711905 + r20711907;
+        float r20711909 = 18.0;
+        float r20711910 = -14.0;
+        float r20711911 = r20711910 * r20711879;
+        float r20711912 = r20711909 + r20711911;
+        float r20711913 = 4;
+        float r20711914 = pow(r20711879, r20711913);
+        float r20711915 = -0.007143;
+        float r20711916 = r20711879 * r20711915;
+        float r20711917 = r20711914 * r20711916;
+        float r20711918 = r20711912 + r20711917;
+        float r20711919 = r20711884 * r20711918;
+        float r20711920 = r20711908 + r20711919;
+        float r20711921 = r20711904 + r20711920;
+        return r20711921;
+}
+
+double f_od(double x) {
+        double r20711922 = x;
+        double r20711923 = -3e-06;
+        double r20711924 = r20711922 * r20711923;
+        double r20711925 = 0.000223;
+        double r20711926 = r20711924 + r20711925;
+        double r20711927 = r20711922 * r20711922;
+        double r20711928 = 3;
+        double r20711929 = 1;
+        double r20711930 = r20711928 + r20711929;
+        double r20711931 = pow(r20711927, r20711930);
+        double r20711932 = r20711926 * r20711931;
+        double r20711933 = r20711927 * r20711927;
+        double r20711934 = cbrt(r20711933);
+        double r20711935 = sqrt(r20711934);
+        double r20711936 = r20711934 * r20711935;
+        double r20711937 = r20711936 * r20711935;
+        double r20711938 = r20711937 * r20711934;
+        double r20711939 = 0.116667;
+        double r20711940 = r20711939 * r20711927;
+        double r20711941 = 5.25;
+        double r20711942 = -1.05;
+        double r20711943 = r20711922 * r20711942;
+        double r20711944 = r20711941 + r20711943;
+        double r20711945 = r20711940 + r20711944;
+        double r20711946 = r20711938 * r20711945;
+        double r20711947 = r20711932 + r20711946;
+        double r20711948 = 1.0;
+        double r20711949 = -9.0;
+        double r20711950 = r20711949 * r20711922;
+        double r20711951 = r20711948 + r20711950;
+        double r20711952 = 18.0;
+        double r20711953 = -14.0;
+        double r20711954 = r20711953 * r20711922;
+        double r20711955 = r20711952 + r20711954;
+        double r20711956 = 4;
+        double r20711957 = pow(r20711922, r20711956);
+        double r20711958 = -0.007143;
+        double r20711959 = r20711922 * r20711958;
+        double r20711960 = r20711957 * r20711959;
+        double r20711961 = r20711955 + r20711960;
+        double r20711962 = r20711927 * r20711961;
+        double r20711963 = r20711951 + r20711962;
+        double r20711964 = r20711947 + r20711963;
+        return r20711964;
+}
+
+void mpfr_fmod2(mpfr_t r, mpfr_t n, mpfr_t d, mpfr_rnd_t rmd) {
+        mpfr_fmod(r, n, d, rmd);
+        if (mpfr_cmp_ui(r, 0) < 0) mpfr_add(r, r, d, rmd);
+}
+
+
+static mpfr_t r20711965, r20711966, r20711967, r20711968, r20711969, r20711970, r20711971, r20711972, r20711973, r20711974, r20711975, r20711976, r20711977, r20711978, r20711979, r20711980, r20711981, r20711982, r20711983, r20711984, r20711985, r20711986, r20711987, r20711988, r20711989, r20711990, r20711991, r20711992, r20711993, r20711994, r20711995, r20711996, r20711997, r20711998, r20711999, r20712000, r20712001;
+
+void setup_mpfr_f_im() {
+        mpfr_set_default_prec(592);
+        mpfr_init_set_str(r20711965, "1.0", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20711966, "-9.0", 10, MPFR_RNDN);
+        mpfr_init(r20711967);
+        mpfr_init(r20711968);
+        mpfr_init(r20711969);
+        mpfr_init_set_str(r20711970, "18.0", 10, MPFR_RNDN);
+        mpfr_init(r20711971);
+        mpfr_init(r20711972);
+        mpfr_init(r20711973);
+        mpfr_init_set_str(r20711974, "-14.0", 10, MPFR_RNDN);
+        mpfr_init(r20711975);
+        mpfr_init(r20711976);
+        mpfr_init(r20711977);
+        mpfr_init_set_str(r20711978, "5.25", 10, MPFR_RNDN);
+        mpfr_init(r20711979);
+        mpfr_init(r20711980);
+        mpfr_init(r20711981);
+        mpfr_init_set_str(r20711982, "-1.05", 10, MPFR_RNDN);
+        mpfr_init(r20711983);
+        mpfr_init(r20711984);
+        mpfr_init(r20711985);
+        mpfr_init_set_str(r20711986, "0.116667", 10, MPFR_RNDN);
+        mpfr_init(r20711987);
+        mpfr_init(r20711988);
+        mpfr_init(r20711989);
+        mpfr_init_set_str(r20711990, "-0.007143", 10, MPFR_RNDN);
+        mpfr_init(r20711991);
+        mpfr_init(r20711992);
+        mpfr_init(r20711993);
+        mpfr_init_set_str(r20711994, "0.000223", 10, MPFR_RNDN);
+        mpfr_init(r20711995);
+        mpfr_init(r20711996);
+        mpfr_init(r20711997);
+        mpfr_init_set_str(r20711998, "-3e-06", 10, MPFR_RNDN);
+        mpfr_init(r20711999);
+        mpfr_init(r20712000);
+        mpfr_init(r20712001);
+}
+
+double f_im(double x) {
+        ;
+        ;
+        mpfr_set_d(r20711967, x, MPFR_RNDN);
+        mpfr_mul(r20711968, r20711966, r20711967, MPFR_RNDN);
+        mpfr_add(r20711969, r20711965, r20711968, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711971, r20711967, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711972, r20711970, r20711971, MPFR_RNDN);
+        mpfr_add(r20711973, r20711969, r20711972, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711975, r20711971, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711976, r20711974, r20711975, MPFR_RNDN);
+        mpfr_add(r20711977, r20711973, r20711976, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711979, r20711975, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711980, r20711978, r20711979, MPFR_RNDN);
+        mpfr_add(r20711981, r20711977, r20711980, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711983, r20711979, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711984, r20711982, r20711983, MPFR_RNDN);
+        mpfr_add(r20711985, r20711981, r20711984, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711987, r20711983, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711988, r20711986, r20711987, MPFR_RNDN);
+        mpfr_add(r20711989, r20711985, r20711988, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711991, r20711987, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711992, r20711990, r20711991, MPFR_RNDN);
+        mpfr_add(r20711993, r20711989, r20711992, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711995, r20711991, r20711967, MPFR_RNDN);
+        mpfr_mul(r20711996, r20711994, r20711995, MPFR_RNDN);
+        mpfr_add(r20711997, r20711993, r20711996, MPFR_RNDN);
+        ;
+        mpfr_mul(r20711999, r20711995, r20711967, MPFR_RNDN);
+        mpfr_mul(r20712000, r20711998, r20711999, MPFR_RNDN);
+        mpfr_add(r20712001, r20711997, r20712000, MPFR_RNDN);
+        return mpfr_get_d(r20712001, MPFR_RNDN);
+}
+
+static mpfr_t r20712002, r20712003, r20712004, r20712005, r20712006, r20712007, r20712008, r20712009, r20712010, r20712011, r20712012, r20712013, r20712014, r20712015, r20712016, r20712017, r20712018, r20712019, r20712020, r20712021, r20712022, r20712023, r20712024, r20712025, r20712026, r20712027, r20712028, r20712029, r20712030, r20712031, r20712032, r20712033, r20712034, r20712035, r20712036, r20712037, r20712038, r20712039, r20712040, r20712041, r20712042, r20712043, r20712044;
+
+void setup_mpfr_f_fm() {
+        mpfr_set_default_prec(592);
+        mpfr_init(r20712002);
+        mpfr_init_set_str(r20712003, "-3e-06", 10, MPFR_RNDN);
+        mpfr_init(r20712004);
+        mpfr_init_set_str(r20712005, "0.000223", 10, MPFR_RNDN);
+        mpfr_init(r20712006);
+        mpfr_init(r20712007);
+        mpfr_init_set_str(r20712008, "3", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712009, "1", 10, MPFR_RNDN);
+        mpfr_init(r20712010);
+        mpfr_init(r20712011);
+        mpfr_init(r20712012);
+        mpfr_init(r20712013);
+        mpfr_init(r20712014);
+        mpfr_init(r20712015);
+        mpfr_init(r20712016);
+        mpfr_init(r20712017);
+        mpfr_init(r20712018);
+        mpfr_init_set_str(r20712019, "0.116667", 10, MPFR_RNDN);
+        mpfr_init(r20712020);
+        mpfr_init_set_str(r20712021, "5.25", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712022, "-1.05", 10, MPFR_RNDN);
+        mpfr_init(r20712023);
+        mpfr_init(r20712024);
+        mpfr_init(r20712025);
+        mpfr_init(r20712026);
+        mpfr_init(r20712027);
+        mpfr_init_set_str(r20712028, "1.0", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712029, "-9.0", 10, MPFR_RNDN);
+        mpfr_init(r20712030);
+        mpfr_init(r20712031);
+        mpfr_init_set_str(r20712032, "18.0", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712033, "-14.0", 10, MPFR_RNDN);
+        mpfr_init(r20712034);
+        mpfr_init(r20712035);
+        mpfr_init_set_str(r20712036, "4", 10, MPFR_RNDN);
+        mpfr_init(r20712037);
+        mpfr_init_set_str(r20712038, "-0.007143", 10, MPFR_RNDN);
+        mpfr_init(r20712039);
+        mpfr_init(r20712040);
+        mpfr_init(r20712041);
+        mpfr_init(r20712042);
+        mpfr_init(r20712043);
+        mpfr_init(r20712044);
+}
+
+double f_fm(double x) {
+        mpfr_set_d(r20712002, x, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712004, r20712002, r20712003, MPFR_RNDN);
+        ;
+        mpfr_add(r20712006, r20712004, r20712005, MPFR_RNDN);
+        mpfr_mul(r20712007, r20712002, r20712002, MPFR_RNDN);
+        ;
+        ;
+        mpfr_add(r20712010, r20712008, r20712009, MPFR_RNDN);
+        mpfr_pow(r20712011, r20712007, r20712010, MPFR_RNDN);
+        mpfr_mul(r20712012, r20712006, r20712011, MPFR_RNDN);
+        mpfr_mul(r20712013, r20712007, r20712007, MPFR_RNDN);
+        mpfr_cbrt(r20712014, r20712013, MPFR_RNDN);
+        mpfr_sqrt(r20712015, r20712014, MPFR_RNDN);
+        mpfr_mul(r20712016, r20712014, r20712015, MPFR_RNDN);
+        mpfr_mul(r20712017, r20712016, r20712015, MPFR_RNDN);
+        mpfr_mul(r20712018, r20712017, r20712014, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712020, r20712019, r20712007, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712023, r20712002, r20712022, MPFR_RNDN);
+        mpfr_add(r20712024, r20712021, r20712023, MPFR_RNDN);
+        mpfr_add(r20712025, r20712020, r20712024, MPFR_RNDN);
+        mpfr_mul(r20712026, r20712018, r20712025, MPFR_RNDN);
+        mpfr_add(r20712027, r20712012, r20712026, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712030, r20712029, r20712002, MPFR_RNDN);
+        mpfr_add(r20712031, r20712028, r20712030, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712034, r20712033, r20712002, MPFR_RNDN);
+        mpfr_add(r20712035, r20712032, r20712034, MPFR_RNDN);
+        ;
+        mpfr_pow(r20712037, r20712002, r20712036, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712039, r20712002, r20712038, MPFR_RNDN);
+        mpfr_mul(r20712040, r20712037, r20712039, MPFR_RNDN);
+        mpfr_add(r20712041, r20712035, r20712040, MPFR_RNDN);
+        mpfr_mul(r20712042, r20712007, r20712041, MPFR_RNDN);
+        mpfr_add(r20712043, r20712031, r20712042, MPFR_RNDN);
+        mpfr_add(r20712044, r20712027, r20712043, MPFR_RNDN);
+        return mpfr_get_d(r20712044, MPFR_RNDN);
+}
+
+static mpfr_t r20712045, r20712046, r20712047, r20712048, r20712049, r20712050, r20712051, r20712052, r20712053, r20712054, r20712055, r20712056, r20712057, r20712058, r20712059, r20712060, r20712061, r20712062, r20712063, r20712064, r20712065, r20712066, r20712067, r20712068, r20712069, r20712070, r20712071, r20712072, r20712073, r20712074, r20712075, r20712076, r20712077, r20712078, r20712079, r20712080, r20712081, r20712082, r20712083, r20712084, r20712085, r20712086, r20712087;
+
+void setup_mpfr_f_dm() {
+        mpfr_set_default_prec(592);
+        mpfr_init(r20712045);
+        mpfr_init_set_str(r20712046, "-3e-06", 10, MPFR_RNDN);
+        mpfr_init(r20712047);
+        mpfr_init_set_str(r20712048, "0.000223", 10, MPFR_RNDN);
+        mpfr_init(r20712049);
+        mpfr_init(r20712050);
+        mpfr_init_set_str(r20712051, "3", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712052, "1", 10, MPFR_RNDN);
+        mpfr_init(r20712053);
+        mpfr_init(r20712054);
+        mpfr_init(r20712055);
+        mpfr_init(r20712056);
+        mpfr_init(r20712057);
+        mpfr_init(r20712058);
+        mpfr_init(r20712059);
+        mpfr_init(r20712060);
+        mpfr_init(r20712061);
+        mpfr_init_set_str(r20712062, "0.116667", 10, MPFR_RNDN);
+        mpfr_init(r20712063);
+        mpfr_init_set_str(r20712064, "5.25", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712065, "-1.05", 10, MPFR_RNDN);
+        mpfr_init(r20712066);
+        mpfr_init(r20712067);
+        mpfr_init(r20712068);
+        mpfr_init(r20712069);
+        mpfr_init(r20712070);
+        mpfr_init_set_str(r20712071, "1.0", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712072, "-9.0", 10, MPFR_RNDN);
+        mpfr_init(r20712073);
+        mpfr_init(r20712074);
+        mpfr_init_set_str(r20712075, "18.0", 10, MPFR_RNDN);
+        mpfr_init_set_str(r20712076, "-14.0", 10, MPFR_RNDN);
+        mpfr_init(r20712077);
+        mpfr_init(r20712078);
+        mpfr_init_set_str(r20712079, "4", 10, MPFR_RNDN);
+        mpfr_init(r20712080);
+        mpfr_init_set_str(r20712081, "-0.007143", 10, MPFR_RNDN);
+        mpfr_init(r20712082);
+        mpfr_init(r20712083);
+        mpfr_init(r20712084);
+        mpfr_init(r20712085);
+        mpfr_init(r20712086);
+        mpfr_init(r20712087);
+}
+
+double f_dm(double x) {
+        mpfr_set_d(r20712045, x, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712047, r20712045, r20712046, MPFR_RNDN);
+        ;
+        mpfr_add(r20712049, r20712047, r20712048, MPFR_RNDN);
+        mpfr_mul(r20712050, r20712045, r20712045, MPFR_RNDN);
+        ;
+        ;
+        mpfr_add(r20712053, r20712051, r20712052, MPFR_RNDN);
+        mpfr_pow(r20712054, r20712050, r20712053, MPFR_RNDN);
+        mpfr_mul(r20712055, r20712049, r20712054, MPFR_RNDN);
+        mpfr_mul(r20712056, r20712050, r20712050, MPFR_RNDN);
+        mpfr_cbrt(r20712057, r20712056, MPFR_RNDN);
+        mpfr_sqrt(r20712058, r20712057, MPFR_RNDN);
+        mpfr_mul(r20712059, r20712057, r20712058, MPFR_RNDN);
+        mpfr_mul(r20712060, r20712059, r20712058, MPFR_RNDN);
+        mpfr_mul(r20712061, r20712060, r20712057, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712063, r20712062, r20712050, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712066, r20712045, r20712065, MPFR_RNDN);
+        mpfr_add(r20712067, r20712064, r20712066, MPFR_RNDN);
+        mpfr_add(r20712068, r20712063, r20712067, MPFR_RNDN);
+        mpfr_mul(r20712069, r20712061, r20712068, MPFR_RNDN);
+        mpfr_add(r20712070, r20712055, r20712069, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712073, r20712072, r20712045, MPFR_RNDN);
+        mpfr_add(r20712074, r20712071, r20712073, MPFR_RNDN);
+        ;
+        ;
+        mpfr_mul(r20712077, r20712076, r20712045, MPFR_RNDN);
+        mpfr_add(r20712078, r20712075, r20712077, MPFR_RNDN);
+        ;
+        mpfr_pow(r20712080, r20712045, r20712079, MPFR_RNDN);
+        ;
+        mpfr_mul(r20712082, r20712045, r20712081, MPFR_RNDN);
+        mpfr_mul(r20712083, r20712080, r20712082, MPFR_RNDN);
+        mpfr_add(r20712084, r20712078, r20712083, MPFR_RNDN);
+        mpfr_mul(r20712085, r20712050, r20712084, MPFR_RNDN);
+        mpfr_add(r20712086, r20712074, r20712085, MPFR_RNDN);
+        mpfr_add(r20712087, r20712070, r20712086, MPFR_RNDN);
+        return mpfr_get_d(r20712087, MPFR_RNDN);
+}
+
